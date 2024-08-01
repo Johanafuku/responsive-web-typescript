@@ -1,0 +1,155 @@
+.information {
+    @include breakpoint(tablethorizontal){
+        display: grid;
+        grid-template-columns: 65% 35%;
+        justify-content: space-between;
+        gap: 30px;
+    }
+
+    @include breakpoint(desktop) {
+        margin-bottom: 80px;
+    }
+}
+
+.information-img {
+    display: flex;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+    margin-bottom: 260px;
+    @include breakpoint(tablet) {
+        margin-top: 40px;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 72px;
+    }
+
+    @include breakpoint(tablethorizontal){
+        display: grid;
+        grid-template-columns: 35% 61%;
+        
+    }
+
+    .img-mobile3 {
+        max-width: 129px;
+        max-height: 193px;
+        position: absolute;
+        left: -16px;
+        @include breakpoint(tablet) {
+            display: none;
+        }
+        @include breakpoint(tablethorizontal) {
+            display: none;
+        }
+    }
+    .img-mobile2 {
+        max-width: 242px;
+        height: fit-content;
+        max-height: 193px;
+        position: absolute;
+        left: 117px;
+        @include breakpoint(tablet) {
+            display: none;
+        }
+        @include breakpoint(tablethorizontal) {
+            display: none;
+        }
+    }
+
+    .img-tablet3 {
+        display: none;
+        @include breakpoint(tablet) {
+            display: block;
+            max-width: 214px;
+    }
+        @include breakpoint(tablethorizontal){
+            display: none;
+        }
+    }
+    .img-tablet2 {
+        display: none;
+        @include breakpoint(tablet) {
+            display: block;
+            max-width: 445px;
+        }
+        @include breakpoint(tablethorizontal){
+            display: none;
+        }
+    }
+
+    .img-tablet-desktop3 {
+        display: none;
+        @include breakpoint(tablethorizontal){
+            display: block;
+            max-width: 100% ;
+            max-height: 380px;
+        }
+    }
+
+    .img-tablet-desktop2 {
+        display: none;
+        @include breakpoint(tablethorizontal){
+            display: block;
+            max-width: 100%;
+            max-height: 380px;
+        }
+    }
+}
+
+.information-description {
+    @include breakpoint(tablet) {
+        display: flex;
+        align-items: baseline;
+    }
+
+    @include breakpoint(tablethorizontal){
+        display: flex;
+        flex-direction: column;
+    }
+
+    @include breakpoint(desktop) {
+        padding-left: 20px;
+    }
+    h2 {
+        font-size: 32px;
+        font-weight: 850;
+        line-height: 36px;
+        text-align: center;
+        color: $black;
+        padding: 0 24px;
+        margin-bottom: 24px;
+        @include breakpoint(tablet) {
+            padding: 0;
+            text-align: left;
+        }
+
+        @include breakpoint(tablethorizontal){
+            padding-top: 70px;
+            margin-top: 30px;
+        }
+
+        @include breakpoint(desktop) {
+            max-width: 90%;
+        }
+    }
+
+    p {
+        font-size: 16px;
+        font-weight: 500;
+        color: $light-blue;
+        text-align: center;
+        margin-bottom: 110px;
+        @include breakpoint(tablet) {
+            max-width: 58%;
+            text-align: left;
+            line-height: 26px;
+            margin-bottom: 142px;
+        }
+
+        @include breakpoint(tablethorizontal){
+            max-width: 90%;
+            margin-bottom: 100px;
+        }
+
+       
+    }
+}

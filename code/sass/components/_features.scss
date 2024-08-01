@@ -1,0 +1,64 @@
+.features {
+    @include breakpoint(tablet) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 65px;
+    }
+
+    @include breakpoint(desktop){
+        display:  grid;
+        grid-template-columns: repeat(4,1fr);
+        gap: 30px;
+        margin-bottom: 100px;
+    }
+    .details {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        @include breakpoint(tablet) {
+            align-items: start;
+            justify-content: start;
+        }
+
+        &-icon {
+            margin-bottom: 48px;
+        }
+
+        &-title {
+            margin-bottom: 24px;
+            font-size: 24px;
+            color: $black;
+            font-weight: 800;
+            text-align: center;
+            padding: 0px 70px;
+            @include breakpoint(tablet) {
+                text-align: left;
+                padding: 0;
+                max-width: 70%;
+            }
+            @include breakpoint(tablethorizontal){
+                max-width: 50%;
+            }
+            @include breakpoint(desktop){
+                max-width: 100%;
+            }
+
+        }
+
+        &-description {
+            margin-bottom: 64px;
+            font-size: 16px;
+            color: $light-blue;
+            text-align: center;
+            line-height: 26px;
+            font-weight: 500;
+
+            @include breakpoint(tablet) {
+                text-align: left;
+                margin-bottom: 0;
+            }
+        }
+    }
+}

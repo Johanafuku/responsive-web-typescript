@@ -1,0 +1,20 @@
+body {
+    &::before {
+        display: none;
+        @include breakpoint(desktop){
+            display: block;
+            content: '';
+        background-image: url('/img/left-square.png');
+        background-repeat: no-repeat;
+        width: 255px;
+        height: 236px;
+        background-position: left;
+        position: absolute;
+        left: -30px;
+        top: 760px;
+        }
+        
+    }
+
+ 
+}

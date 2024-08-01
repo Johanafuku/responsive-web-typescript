@@ -1,0 +1,17 @@
+.footer-detail {
+    text-align: center;
+    color: $light-blue;
+    font-weight: 500;
+    span {
+        font-weight: bold;
+    }
+
+}
+
+footer {
+    .container {
+        @include breakpoint(tablet) {
+            margin-bottom: 43px;
+        }
+    }
+}

@@ -1,0 +1,120 @@
+.hero {
+    display: flex;
+    flex-direction: column;
+    @include breakpoint(tablet) {
+        display: grid;
+        grid-template-columns: 60% 40%;
+    }
+    @include breakpoint(tablethorizontal){
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 380px;
+    }
+
+    @include breakpoint(desktop) {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 400px;
+    }
+    & .hero-content {
+        margin-bottom: 64px;
+
+        @include breakpoint(tablet) {
+            max-width: 78%;
+        }
+
+        @include breakpoint(tablethorizontal){
+            padding-top: 45px;
+            
+        }
+
+        @include breakpoint(desktop) {
+            max-width: 85%;
+            padding-top: 55px;
+        }
+    }
+
+    & .hero-title {
+        font-size: 48px;
+        font-weight: 800;
+        color: $black;
+        line-height: 48px;
+        margin-bottom: 32px;
+        @include breakpoint(tablethorizontal){
+            margin-bottom: 24px;
+        }
+    }
+
+    & .hero-subtitle {
+        font-size: 16px;
+        color: $light-blue;
+        line-height: 22px;
+        font-weight: 500;
+        margin-bottom: 32px;
+    }
+
+    & .hero-ul {
+        display: flex;
+        justify-content: left;
+        gap: 20px;
+
+        @include breakpoint(tablet) {
+            justify-content: space-between;
+        }
+
+        @include breakpoint(desktop){
+            justify-content: left;
+        }
+
+        li:nth-of-type(2) {
+            color: $light-blue;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+        }
+    & .hero-img {
+        position: relative;
+        margin-bottom: 350px;
+        @include breakpoint(tablethorizontal) {
+            display: flex;
+            margin-bottom: 0;
+        }
+        
+        .img-mobile {
+            position: absolute;
+            max-width: 100%;
+            right: -16px;
+            @include breakpoint(tablet) {
+                display: none;
+            }
+        }
+        .img-tablet {
+            display: none;
+            @include breakpoint(tablet) {
+                display: block;
+                max-width: 478px;
+                max-height: 425px;
+                position: absolute;
+                right: -32px;
+                top: -79px;
+            }
+
+            @include breakpoint(tablethorizontal){
+                display: none;
+            }
+        } 
+        
+        .img-tablet-desktop {
+            display: none;
+            @include breakpoint(tablethorizontal){
+                display: block;
+                max-width: 100%;
+                object-fit: fit;
+                border-radius: 13px;
+                
+            }
+        }
+    }
+}
+
+    

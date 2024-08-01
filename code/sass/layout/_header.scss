@@ -1,0 +1,21 @@
+.container {
+    margin-bottom: 64px;
+
+    @include breakpoint(tablet) {
+        margin-bottom: 122px;
+    }
+
+    @include breakpoint(tablethorizontal){
+        margin-bottom: 70px;
+    }
+   ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include reset-list();
+
+    & img {
+        width: 36px;
+    }
+   }
+}

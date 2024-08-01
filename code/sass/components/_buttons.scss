@@ -1,0 +1,7 @@
+.grey-button {
+    @include button-grey();
+}
+
+.orange-button {
+    @include button-orange();
+}
