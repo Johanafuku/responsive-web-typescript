@@ -36,7 +36,7 @@ If you have more ideas to improve the code, or make it more efficient. Let me no
 
 ***
 
-# Landing-page-responsive 📱💻
+# Typescript-page-responsive 📱💻
 
 Otro proyecto responsive para una empresa de mecanografía usando HTML, SASS, con vite y Node.js 👾
 
