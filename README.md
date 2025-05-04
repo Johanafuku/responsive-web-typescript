@@ -2,6 +2,18 @@
 
 Another responsive proyect of a landing page for a typescript company, also using HTML, Sass, with vite to compile. 👾
 
+## Previews:
+
+- Mobile:
+<img src='/code/img/preview_mobile.png' width='50%'>
+
+- Tablet:
+<img src='/code/img/preview_tablet.png' width='60%'>
+
+- Desktop:
+<img src='/code/img/preview_desktop.png' width='60%'>
+
+
 ## Features
 
 ☑️ Use of the strategy mobile first.
@@ -40,6 +52,16 @@ If you have more ideas to improve the code, or make it more efficient. Let me no
 
 Otro proyecto responsive para una empresa de mecanografía usando HTML, SASS, con vite y Node.js 👾
 
+## Vistas previas:
+
+- Mobile:
+<img src='/code/img/preview_mobile.png' width='50%'>
+
+- Tablet:
+<img src='/code/img/preview_tablet.png' width='60%'>
+
+- Desktop:
+<img src='/code/img/preview_desktop.png' width='60%'>
 ## Características
 
 ☑️ Uso de la estrategia mobile first.
